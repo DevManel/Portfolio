@@ -235,11 +235,29 @@ header{
     transition: 1s ease;
 }
 
+.realisation p{
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    
+}
+
 .realisation:hover img{
     filter: brightness(80%);
 }
 
 .realisation:hover h3{
+    opacity: 1;
+}
+
+.realisation:hover p{
     opacity: 1;
 }
 
@@ -370,6 +388,26 @@ li{
 
     .realisation{
         width: 47%;
+    }
+
+    .realisation h3{
+        top: 20%;
+        left: 50%;
+        font-size: 1.75rem;
+        width: 100%;
+       
+        opacity: 1;
+    }
+
+    .realisation p{
+        top: 70%;
+        left: 50%;
+        font-size: 1rem;
+        height: 50%;
+        width: 80%;
+        opacity: 1;
+        overflow: auto;
+        
     }
 
     .mgap20{
