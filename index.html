@@ -230,30 +230,30 @@
     <div id="Contact" class="section dark">
         <div class="boxed text-center">
             <h2>Contactez-moi</h2>
-            <form Action="mailto:manel-mokhtari@hotmail.com" METHOD="POST" ENCTYPE="text/plain">
+            <form Action="https://formsubmit.co/manel-mokhtari@hotmail.com" METHOD="POST" ENCTYPE="text/plain">
                 <div class="row">
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="Prénom" required>
+                    <input type="text" class="form-control" name="prenom" placeholder="Prénom" required>
                   </div>
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="Nom" required>
+                    <input type="text" class="form-control" name="nom" placeholder="Nom" required>
                   </div>
                 </div>
                 <br>
                 <div class="row">
                     <div class="col">
-                        <input type="email" class="form-control" placeholder="Email" required>
+                        <input type="email" class="form-control" name="email" placeholder="Email" required>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="validationTextarea">Message</label>
-                    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                    <textarea class="form-control is-invalid" id="validationTextarea" name="message" placeholder="Message" required></textarea>
                     <div class="invalid-feedback">
                       Votre message.
                     </div>
                   </div>
                 <br>
-                <a href="mailto:manel-mokhtari@hotmail.com"><button type="submit" class="btn btn-light text-dark">Envoyer</button></a>
+                <button type="submit" class="btn btn-light text-dark">Envoyer</button>
             </form>
             <footer class="icon">
                 <a href="https://github.com/DevManel"><i class="bi bi-github bg-light contact text-dark"></i></a>
