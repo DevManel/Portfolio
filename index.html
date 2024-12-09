@@ -307,14 +307,14 @@
     <div id="Contact" class="section dark">
         <div class="boxed text-center">
             <h2>Contactez-moi</h2>
-            <form Action="send_email.php" METHOD="POST" ENCTYPE="text/plain">
+            <form action="send_email.php" method="POST">
                 <div class="row">
-                  <div class="col">
-                    <input type="text" class="form-control" name="first-Name" placeholder="Prénom" required>
-                  </div>
-                  <div class="col">
-                    <input type="text" class="form-control" name="last-name" placeholder="Nom" required>
-                  </div>
+                    <div class="col">
+                        <input type="text" class="form-control" name="first_name" placeholder="Prénom" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" name="last_name" placeholder="Nom" required>
+                    </div>
                 </div>
                 <br>
                 <div class="row">
@@ -324,14 +324,12 @@
                 </div>
                 <div class="mb-3">
                     <label for="validationTextarea">Message</label>
-                    <textarea class="form-control is-invalid" id="validationTextarea" name="message" placeholder="Message" required></textarea>
-                    <div class="invalid-feedback">
-                      Votre message.
-                    </div>
-                  </div>
+                    <textarea class="form-control" id="validationTextarea" name="message" placeholder="Message" required></textarea>
+                </div>
                 <br>
                 <button type="submit" class="btn btn-light text-dark">Envoyer</button>
             </form>
+            
             <footer class="icon">
                 <a href="https://github.com/DevManel"><i class="bi bi-github bg-light contact text-dark"></i></a>
                 <a href="https://www.linkedin.com/in/manel-mokhtari-40a3991b2/" target="_blank"><i class="bi bi-linkedin bg-light contact text-dark"></i></a>
