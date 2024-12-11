@@ -51,7 +51,7 @@ if (isset($_POST['envoyer'])) {
     }
 
     // Rediriger après l'envoi
-    header("Location: send_email.php");  // Assurez-vous que vous redirigez vers la même page ou une autre page appropriée
+    header("Location: index.html");  // Assurez-vous que vous redirigez vers la même page ou une autre page appropriée
     exit();
 }
 ?>
