@@ -140,7 +140,7 @@ header{
 }
 
 .boxed{
-    max-width: 1280px;
+    max-width: 90%;
     margin-inline: auto;
 }
 
@@ -210,7 +210,6 @@ header{
     height: auto;
     aspect-ratio: 1/1;
     position: relative;
-
 }
 
 .realisation a{
@@ -281,8 +280,9 @@ header{
 
 /*Contact section*/
 .icon{
+    margin-top: 30px;
     font-size: 40px !important;
-    padding: 30px;
+    /*padding: 30px;*/
 }
 
 .contact{
@@ -304,7 +304,24 @@ li{
     text-transform: uppercase;
     margin: 20px;
 }
-@media(max-width: 810px){
+@media screen and (max-width: 596px){
+    #projects div.flex{
+    flex-direction: column;
+    justify-content: center;
+    width: 180vw;
+
+}
+    .space-element{
+        gap: 10px;
+    }
+    .realisation a{
+        font-size: 1rem;
+    }
+    .realisation p{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 991px){
     header{
         height: 60px !important;
     }
@@ -374,9 +391,8 @@ li{
     .section{
         padding: 50px 0;
     }
-
-    .boxed{
-        max-width: 90%;
+    #presentation > article > div{
+        padding: 10px;
     }
 
     h2{
@@ -404,8 +420,6 @@ li{
         left: 50%;
         font-size: 1.75rem;
         width: 100%;
-       
-        opacity: 1;
     }
 
     .realisation p{
@@ -414,12 +428,23 @@ li{
         font-size: 1rem;
         height: 50%;
         width: 80%;
-        opacity: 1;
-        overflow: auto;
-        
     }
     .mgap20{
         gap: 20px; 
      }
     
+}
+@media screen and (max-width: 1128px){
+    .navbar-light .navbar-brand{
+        margin-right: 0;
+    }
+    .navbar-nav{
+        margin-right: 0;
+    }
+    .about-h2{
+        padding: 10px;
+    }
+    .flex{
+        justify-content: space-evenly;
+    }
 }
