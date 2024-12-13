@@ -23,7 +23,12 @@ body{
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 500;
+ 
   }
+  .navbar-nav a:hover{
+    text-decoration: underline;
+  }
+
 
   .navbar-light .navbar-brand{
     color: #000;
@@ -190,6 +195,9 @@ header{
 
 .skill:hover{
     transform: scale(1.1);
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
 }
 .skill img{
     width: 100px;
@@ -201,6 +209,10 @@ header{
 .skill h3{
     color: #000;
     margin-top: 10px;
+}
+
+.skill h3:hover{
+    color: #fff;
 }
 
 /*Project section*/
@@ -281,15 +293,15 @@ header{
 /*Contact section*/
 .icon{
     margin-top: 30px;
-    font-size: 40px !important;
-    /*padding: 30px;*/
+    font-size: 25px !important;
+    padding: 0;
 }
 
 .contact{
     width: 32%;
     border: 2px solid #fff;
     border-radius: 15px;
-    padding: 20px;
+    padding: 5px;
     box-sizing: border-box;
 }
 
@@ -305,15 +317,18 @@ li{
     margin: 20px;
 }
 @media screen and (max-width: 596px){
+    #projects{
+        padding-left: 5px;
+    }
     #projects div.flex{
     flex-direction: column;
     justify-content: center;
     width: 180vw;
 
 }
-    .space-element{
+    /*.space-element{
         gap: 10px;
-    }
+    }*/
     .realisation a{
         font-size: 1rem;
     }
